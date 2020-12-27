@@ -25,3 +25,6 @@ List all the available (non-taken) orders with this format
 `take_order [id]`
 Try to take the order with the given ID, returns an error if order is already taken.
 id is required.
+
+### Testing
+`npm test` will run some simple test cases in ./test/test.js, using mocha and chai library
