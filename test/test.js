@@ -7,8 +7,6 @@ var backupdata;
 describe('All test', () => {
 
     after(function (done) {
-        console.log("after");
-        console.log(backupdata);
         var data = fs.readFileSync("./bin/database.json", 'utf8');
         data = JSON.parse(data);
         data.pop();
