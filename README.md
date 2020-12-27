@@ -14,11 +14,14 @@ setup.sh is used to install npm and run npm install.
 Also, npm install -g will add the application command globally
 
 ### Usage
-create an order 
-llm create_order <from> <to>
+`create_order [from] [to]`
+returns a unique ID for this order.
+from and to are required.
 
-list all orders 
-llm list_orders
+`list_orders`
+List all the available (non-taken) orders with this format
+`ID,FROM,TO\n`
 
-take an order
-llm take_order <order_id>
+`take_order [id]`
+Try to take the order with the given ID, returns an error if order is already taken.
+id is required.
