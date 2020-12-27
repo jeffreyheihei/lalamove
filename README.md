@@ -11,7 +11,7 @@ I use a simple database.json file as a database
 
 ### setup.sh
 setup.sh is used to install npm and run npm install. 
-Also, npm install -g will add the application command globally
+Also, `npm install -g` will add the application command globally
 
 ### Usage
 `create_order [from] [to]`
